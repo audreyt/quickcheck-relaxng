@@ -1,0 +1,7 @@
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <start><element name="book" xmlns="http://relaxng.org/ns/structure/1.0">
+        <oneOrMore><element name="author"><data type="string">
+            <param name="pattern">[-a-z0-9._%]+@[-a-z0-9.]+\.[a-z]{3,18}\.(asia|eu|today)</param>
+        </data></element></oneOrMore>
+    </element></start>
+</grammar>
