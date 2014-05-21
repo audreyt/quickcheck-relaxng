@@ -1,5 +1,5 @@
 quickcheck-relaxng
-================
+==================
 
 This module exports the `matchingRNG` function that turns a RelaxNG pattern
 into a QuickCheck generator for XML documents matching that pattern.
