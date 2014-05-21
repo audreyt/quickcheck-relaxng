@@ -17,9 +17,9 @@ For example, given a `book.rng` schema file:
 
 We can generate a random `XmlTree` conforming to it:
 
-    >>> import Test.QuickCheck.RelaxNG (loadRNG, matchingRNG)
+    >>> import Test.QuickCheck.RelaxNG (loadRNG, matchingRNG, showXmlTree)
     >>> import Test.QuickCheck (generate)
-    >>> print =<< generate . matchingRNG =<< loadRNG "book.rng"
+    >>> putStr . showXmlTree =<< generate . matchingRNG =<< loadRNG "book.rng"
     <?xml version="1.0" encoding="UTF-8"?>
     <book>
       <author>3qd9g02xlu@swbbnr.kmmlxdy.asia</author>
